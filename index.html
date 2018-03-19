@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Image Uploader</title>
+    </head>
+
+    <body>
+
+        <h1>Image Uploader</h1>
+
+        <div>
+            <input id="imageUp" name="imageData" type="file" accept="image/*">
+        </div>
+
+        <div>
+            <img id="imageShow" style="max-width: 500px; max-height: 500px;">
+        </div>
+
+
+        <!-- Javascript Code -->
+        <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+        <script type="text/javascript" src="lib/binaryajax.js"></script>
+        <script type="text/javascript" src="lib/exif.js"></script>
+        <script type="text/javascript" src="src/gPhotoUpload.js"></script>
+
+        <script>
+            gPhotoUpload.init({
+                'fileInput': 'imageUp',
+                'quality': .5
+            });
+        </script>
+    </body>
+
+</html>
+
